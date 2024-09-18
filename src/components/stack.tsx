@@ -16,6 +16,7 @@ export default function Stack() {
     <div className="mt-5 gap-2 flex">
       <TooltipProvider>
         {tooltips.map((tooltip, index) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
           <Tooltip key={index}>
             <TooltipTrigger>{tooltip.icon}</TooltipTrigger>
             <TooltipContent>

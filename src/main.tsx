@@ -5,7 +5,7 @@ import "./index.css";
 
 import { ThemeProvider } from "./components/theme-provider.tsx";
 
-
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
